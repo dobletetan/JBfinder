@@ -1,5 +1,6 @@
 plugins {
     id("com.android.application")
+    id("com.google.gms.google-services")
 }
 
 android {
@@ -12,6 +13,7 @@ android {
         targetSdk = 33
         versionCode = 1
         versionName = "1.0"
+        multiDexEnabled = true
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -29,10 +31,26 @@ android {
     buildFeatures {
         viewBinding = true
     }
+    packagingOptions {
+        exclude("META-INF/ASL2.0")
+        exclude("META-INF/LICENSE")
+        exclude("META-INF/NOTICE")
+        exclude("META-INF/DEPENDENCIES")
+        exclude("META-INF/notice.txt")
+        exclude("META-INF/license.txt")
+        exclude("META-INF/dependencies.txt")
+        exclude("META-INF/ASL2.0.txt")
+        exclude("META-INF/LGPL2.1")
+        exclude("META-INF/services/javax.annotation.processing.Processor")
+        exclude("androidsupportmultidexversion.txt")
+    }
 }
 
 dependencies {
-
+    implementation ("com.android.support:multidex:1.0.3")
+    implementation("com.google.firebase:firebase-auth:22.3.0")
+    implementation("com.google.firebase:firebase-analytics")
+    implementation(platform("com.google.firebase:firebase-bom:32.6.0"))
     implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("com.google.android.material:material:1.10.0")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")

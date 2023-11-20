@@ -5,7 +5,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Toast;
+
+import com.snkcorp.jbfinder.comp.Company;
+import com.snkcorp.jbfinder.per.persona;
 
 public class Select extends AppCompatActivity {
 
@@ -22,7 +24,8 @@ public class Select extends AppCompatActivity {
 
 
         } else if (view.getId() == R.id.Persona_button) {
-            Toast.makeText(getApplicationContext(), "Proximamente", Toast.LENGTH_SHORT).show();
+            Intent elegirIntent = new Intent(Select.this, persona.class);
+            startActivity(elegirIntent);
 
         } else if (view.getId() == R.id.Back) {
             Intent elegirIntent = new Intent(Select.this,Menu.class);

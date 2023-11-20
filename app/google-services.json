@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "536312345609",
+    "project_id": "jbfinder",
+    "storage_bucket": "jbfinder.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:536312345609:android:90fee605f36b8fada6f4d8",
+        "android_client_info": {
+          "package_name": "com.snkcorp.jbfinder"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDvX0SljBWJYy2Dnl0U6TacdJC9ZuujOMk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

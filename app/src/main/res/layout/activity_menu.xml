@@ -18,7 +18,7 @@
         app:srcCompat="@drawable/logouno" />
 
     <EditText
-        android:id="@+id/editTextText"
+        android:id="@+id/emailLog"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -32,7 +32,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
     <EditText
-        android:id="@+id/editTextTextPassword"
+        android:id="@+id/passLog"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -43,7 +43,7 @@
         android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText" />
+        app:layout_constraintTop_toBottomOf="@+id/emailLog" />
 
     <Button
         android:id="@+id/Inicio"
@@ -58,8 +58,8 @@
         app:layout_constraintStart_toStartOf="parent"
         android:background="@drawable/button_inicio"
         android:textColor="#000000"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword"
-        android:onClick="onClick"/>
+        app:layout_constraintTop_toBottomOf="@+id/passLog"
+        android:onClick="onClck"/>
 
     <TextView
         android:id="@+id/textView"
@@ -84,7 +84,7 @@
         android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/textView"
         app:layout_constraintTop_toBottomOf="@+id/Inicio"
-        android:onClick="onClick"/>
+        android:onClick="onClck"/>
 
     <ImageView
         android:id="@+id/imageView4"

@@ -27,16 +27,7 @@ public class HomeFragment extends Fragment {
         binding = FragmentHomeBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final TextView textView = binding.textHome;
-        homeViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
-        AppCompatButton tristeButton = root.findViewById(R.id.triste);
-        tristeButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent elegirIntent = new Intent(requireActivity(), mups.class);
-                startActivity(elegirIntent);
-            }
-        });
+
         return root;
     }
 

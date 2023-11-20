@@ -1,4 +1,4 @@
-package com.snkcorp.jbfinder;
+package com.snkcorp.jbfinder.comp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,6 +8,10 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
+
+import com.snkcorp.jbfinder.MainActivity;
+import com.snkcorp.jbfinder.Menu;
+import com.snkcorp.jbfinder.R;
 
 public class CompanyPartTwo extends AppCompatActivity {
     private Spinner spin;

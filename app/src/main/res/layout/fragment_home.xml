@@ -4,33 +4,66 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.home.HomeFragment">
+    tools:context=".ui.home.HomeFragment"
+    >
 
-    <TextView
-        android:id="@+id/text_home"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="383dp"
+        android:layout_height="530dp"
+        android:layout_marginTop="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ee"></ImageView>
+
+        <TextView
+            android:id="@+id/nombreTrabajo"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="468dp"
+            android:text="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+            android:textSize="20sp"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="16dp" />
+
+        <TextView
+            android:id="@+id/a"
+            android:layout_width="383dp"
+            android:layout_height="74dp"
+            android:layout_gravity="bottom|end"
+            android:text="Nombre de la empresa"
+            android:textSize="30sp"
+            app:layout_constraintTop_toBottomOf="@+id/nombreTrabajo"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="0dp" />
+
+    </androidx.cardview.widget.CardView>
 
     <Button
-        android:id="@+id/triste"
+        android:id="@+id/rechazarButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/text_home"
-        app:layout_constraintHorizontal_bias="0.511"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="16dp"
+        android:text="Rechazar"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.404"
-        android:onClick="onClick"/>
+        app:layout_constraintTop_toBottomOf="@+id/cardView" />
+
+    <Button
+        android:id="@+id/EnviarButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="92dp"
+        android:text="Enviar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

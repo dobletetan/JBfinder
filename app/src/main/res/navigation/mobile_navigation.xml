@@ -12,8 +12,13 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.snkcorp.jbfinder.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_movimientos"
-        tools:layout="@layout/fragment_slideshow" />
+        android:id="@+id/map"
+        android:name="com.snkcorp.jbfinder.map"
+        android:label="fragment_map"
+        tools:layout="@layout/fragment_map" />
+    <fragment
+        android:id="@+id/mov"
+        android:name="com.snkcorp.jbfinder.mov"
+        android:label="fragment_mov"
+        tools:layout="@layout/fragment_mov" />
 </navigation>

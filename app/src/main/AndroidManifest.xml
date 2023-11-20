@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
+
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -13,6 +18,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.JBfinder"
         tools:targetApi="31">
+        <activity
+            android:name=".per.persona"
+            android:exported="false" />
         <activity
             android:name=".mups"
             android:exported="false" />
@@ -25,10 +33,10 @@
             android:value="AIzaSyA0oAI843kEEbFMNWjFAW0dWf8c-VLrIYU" />
 
         <activity
-            android:name=".CompanyPartTwo"
+            android:name=".comp.CompanyPartTwo"
             android:exported="false" />
         <activity
-            android:name=".Company"
+            android:name=".comp.Company"
             android:exported="false" />
         <activity
             android:name=".Select"
@@ -36,7 +44,6 @@
         <activity
             android:name=".Menu"
             android:exported="true">
-            >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -48,6 +55,18 @@
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/Theme.JBfinder.NoActionBar" />
+        <activity
+            android:name=".ProximityActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".GyroscopeActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".RotationVectorActivity"
+            android:screenOrientation="portrait">
+        </activity>
     </application>
 
 </manifest>
