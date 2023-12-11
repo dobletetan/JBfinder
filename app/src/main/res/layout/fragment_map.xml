@@ -52,14 +52,13 @@
             android:id="@+id/GyroscopeButton"
             android:layout_width="163dp"
             android:layout_height="52dp"
-            android:layout_below="@+id/proxy"
             android:layout_alignParentStart="true"
             android:layout_alignParentLeft="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
             android:layout_marginTop="24dp"
             android:text="Gyroscope"
-            app:layout_constraintEnd_toStartOf="@+id/proxy"
+            app:layout_constraintEnd_toStartOf="@+id/proxyButton"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/rotacionButton" />
 
@@ -90,6 +89,16 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+        <Button
+            android:id="@+id/mqattButton"
+            android:layout_width="410dp"
+            android:layout_height="174dp"
+            android:layout_marginTop="90dp"
+            android:text="MQTT"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rotacionButton" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

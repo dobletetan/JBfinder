@@ -60,6 +60,7 @@ public class map extends Fragment{
         Button buttonrot=(Button) view.findViewById(R.id.rotacionButton);
         Button buttongyro=(Button) view.findViewById(R.id.GyroscopeButton);
         Button buttonprox=(Button) view.findViewById(R.id.proxyButton);
+        Button buttonmqtt=(Button) view.findViewById(R.id.mqattButton);
         buttonmap.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -85,6 +86,13 @@ public class map extends Fragment{
             @Override
             public void onClick(View v) {
                 Intent elegirIntent = new Intent(getActivity(), ProximityActivity.class);
+                startActivity(elegirIntent);
+            }
+        });
+        buttonmqtt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent elegirIntent = new Intent(getActivity(), mqtt.class);
                 startActivity(elegirIntent);
             }
         });
